@@ -6,4 +6,8 @@ app.get('/', function (req, res) {
   res.send('hello world')
 })
 
+app.get('/timestamp', function (req, res) {
+  res.send('' + Date.now())
+})
+
 app.listen(PORT)
